@@ -1,0 +1,103 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en">
+	
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>ThugLite Group Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <link href="stylesheet.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="wrapper">
+	
+    <header><!--The main heading for the page -->
+		<h1 style="text-align:center;">ThugLite Recipe Maker</h1>
+	</header>
+	<header class="banner-clipped">
+<img src="banner.png"  width="1000" height="150" 
+alt="banner"/></header>
+	
+    <nav><!--The primary navigation for the page -->
+	<ul class="menu">
+	    
+  <li><a href="index.html">Recipe Generator</a></li>
+  <li><a href="tutorial.html">Project Members</a></li>
+  <li><a href="contact.html">contact Us</a></li>
+	</ul>
+	</nav
+	
+    <main><!--The main page content -->
+	
+<div class="wrapper">
+        <h1>Brighton University recipe generators</h1>
+        <div class="profiling-container">
+            <div class="question question1">
+                <p>Please select main recipe</p>
+                <select name="main" id="main">
+                    <option value="beef">Beef</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="duck">Duck</option>
+                    <option value="lamb">Lamb</option>
+                    <option value="seafood">Seafood</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="fish">Fish</option>
+
+                </select>
+            </div>
+            <div class="question question2">
+                <p>Please select diet type</p>
+                <select name="diet" id="diet">
+                    <option value="high-protein">High Protein</option>
+                    <option value="low-fat">Low Fat</option>
+                    <option value="low-carb">Low Carb</option>
+                    <option value="high-fibre">High Fibre</option>
+                    <option value="balanced">Balanced</option>
+                </select>
+            </div>
+
+            <div class="question question3">
+                <p>Please select desired preference </p>
+                <select name="heath" id="health">
+                    <option value="alcohol-free">None</option>
+                    <option value="sugar-conscious">Sugar-Conscious</option>
+                    <option value="alcohol-free" selected>Alcohol-Free</option>
+                    <option value="peanut-free">Peanut-Free</option>
+                    <option value="tree-nut-free">Tree-Nut-Free</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+            </div>
+            <!-- <div class="question question4">
+                <p>Total cooking and prep time</p>
+                <select name="time" id="time">
+                    <option value="20-">Less than 20mins</option>
+                    <option value="30%2D">Less than 30mins</option>
+                    <option value="45%2D">Less than 45mins</option>
+                    <option value="60%2D">Less than 60mins</option>
+                </select>
+            </div> -->
+        </div>
+        <div class="submit-button">
+            <input type="button" value="Search">
+        </div>
+    </div>
+    <div class="display">
+        <div class="result-container">
+            <ul class="ingredients">
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  <p><a href="#top">Go to top</a></p>
+	<footer><!--Footer content -->
+	 <a href="mailto:ds773@brighton.ac.uk">Email Student </a>
+		<small>&copy; 2021, author= student xyz</small>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
