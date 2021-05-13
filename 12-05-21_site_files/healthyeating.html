@@ -1,0 +1,154 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<!--URL: http://jln26.brighton.domains/group_project/index.html -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Saira Stencil One' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet main">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet alt">
+		<title>ThugLite - Healthy Eating</title>
+	</head>
+	
+<body>
+	<div id="wrapper">
+	<a id="top"></a>
+    <nav id="nav" class="menu">
+<!--The primary navigation for the page -->
+	    <ul class="menuList">
+		    <a href="index.html">Home</a>
+            <a href="healthyeating.html">Healthy Eating</a>
+            <a href="theteam.html">Meet our Team</a>
+            <a href="contact.html">Contact us</a>
+    	</ul>
+	</nav>
+	<div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="healthyeating.html">Healthy Eating</a>
+            <a href="theteam.html">Meet our Team</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+    
+<!-- The banner -->
+    <header class="banner"><!--The main heading for the page -->
+        <span id="navButton" class="navbutton" onclick="openNav()"><a href="#">☰</a></span>
+        <h1 class="bannerTitle" id="title"><a href="#section1">ThugLite Group Project</a></h1>
+	</header>
+    
+    <main>
+<!-- About University of Brighton -->      
+    	<article class="firstarticle">
+			<header class="firstpost" id="section1">
+			</header>
+			<table>
+			    <tr>
+			        <td>
+			            <img src="images/UoB.png"/>
+			        </td>
+			        <td>
+			            <h1>University of Brighton</h1>
+				        <p>The University of Brighton is a public university based on four campuses in Brighton and Eastbourne on the south coast of England. Its roots can be traced back to 1858 when the Brighton School of Art was opened in the Royal Pavilion. It achieved university status in 1992.</p>
+				        <ul class="quicklinks">
+		                    <li><a href="https://www.brighton.ac.uk/index.aspx" target=”_blank”>Find us on the Web</a></li>
+		                    <li><a href="https://github.com/TheLawnMoer/thugslite" target=”_blank”>Project Github</a></li>
+		                </ul>
+				    </td>
+			    </tr>
+			</table>
+			<table class="mobiletable">
+			    <tr>
+			        <td>
+			            <img src="images/UoB.png"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <h1>University of Brighton</h1>
+				        <p>The University of Brighton is a public university based on four campuses in Brighton and Eastbourne on the south coast of England. Its roots can be traced back to 1858 when the Brighton School of Art was opened in the Royal Pavilion. It achieved university status in 1992.</p>
+				        <ul class="quicklinks">
+		                    <li><a href="https://www.brighton.ac.uk/index.aspx" target=”_blank”>Find us on the Web</a></li>
+		                    <li><a href="https://github.com/TheLawnMoer/thugslite" target=”_blank”>Project Github</a></li>
+		                </ul>
+				    </td>
+			    </tr>
+			</table>
+		</article>
+		
+<!-- Food Generator -->
+		<article>
+			<header class="post">
+			    <center>
+			    <h1>8 Tips for Healthy Eating</h1>
+			    <h3>These 8 practical tips cover the basics of healthy eating and can help you make healthier choices.
+			    <br> The key to a healthy diet is to eat the right amount of calories for how active you are so you balance the energy you consume with the energy you use.
+			    <br> If you eat or drink more than your body needs, you'll put on weight because the energy you do not use is stored as fat. If you eat and drink too little, you'll lose weight.
+			    <br> You should also eat a wide range of foods to make sure you're getting a balanced diet and your body is receiving all the nutrients it needs.
+			    <br> It's recommended that men have around 2,500 calories a day (10,500 kilojoules). Women should have around 2,000 calories a day (8,400 kilojoules).
+				<br>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CzB3pB4DBbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br> Most adults in the UK are eating more calories than they need and should eat fewer calories.
+                <br><a href="https://www.tescoplc.com/healthier-diets/">Healthier meals by Tesco Supermarket</a>
+                </h3>
+                </center>
+			</header>
+		</article>
+    </main>
+<!--  Footer  -->
+    	<footer>
+    	    <div class="footermen">
+                <a href="index.html">Home</a>
+                <a href="healthyeating.html">Healthy Eating</a>
+                <a href="theteam.html">Meet our Team</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+            <br>
+	    	<small>&copy; 2021, University of Brighton, School of Computing, Engineering and Mathematics</small>
+    	</footer>
+    </div>
+
+	<script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("navButton").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            document.getElementById("navButton").style.display = "";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("rc");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+            x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+        } 
+        else {
+            document.getElementById("nav").style.top = "-5em";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
