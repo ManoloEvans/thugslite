@@ -1,0 +1,191 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<!--URL: http://jln26.brighton.domains/group_project/index.html -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Saira Stencil One' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet main">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet alt">
+		<title>ThugLite - Home</title>
+	</head>
+	
+<body>
+	<div id="wrapper">
+	<a id="top"></a>
+    <nav id="nav" class="menu">
+<!--The primary navigation for the page -->
+	    <ul class="menuList">
+		    <a href="index.html">Home</a>
+            <a href="healthyeating.html">Healthy Eating</a>
+            <a href="theteam.html">Meet our Team</a>
+            <a href="contact.html">Contact us</a>
+    	</ul>
+	</nav>
+	<div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="healthyeating.html">Healthy Eating</a>
+            <a href="theteam.html">Meet our Team</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+    
+<!-- The banner -->
+    <header class="banner"><!--The main heading for the page -->
+        <span id="navButton" class="navbutton" onclick="openNav()"><a href="#">☰</a></span>
+        <h1 class="bannerTitle" id="title"><a href="#section1">ThugLite Group Project</a></h1>
+	</header>
+    
+    <main>
+<!-- About University of Brighton -->      
+    	<article class="firstarticle">
+			<header class="firstpost" id="section1">
+			</header>
+			<table>
+			    <tr>
+			        <td>
+			            <img src="images/UoB.png"/>
+			        </td>
+			        <td>
+			            <h1>University of Brighton</h1>
+				        <p>The University of Brighton is a public university based on four campuses in Brighton and Eastbourne on the south coast of England. Its roots can be traced back to 1858 when the Brighton School of Art was opened in the Royal Pavilion. It achieved university status in 1992.</p>
+				        <ul class="quicklinks">
+		                    <li><a href="https://www.brighton.ac.uk/index.aspx" target=”_blank”>Find us on the Web</a></li>
+		                    <li><a href="https://github.com/TheLawnMoer/thugslite" target=”_blank”>Project Github</a></li>
+		                </ul>
+				    </td>
+			    </tr>
+			</table>
+			<table class="mobiletable">
+			    <tr>
+			        <td>
+			            <img src="images/UoB.png"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <h1>University of Brighton</h1>
+				        <p>The University of Brighton is a public university based on four campuses in Brighton and Eastbourne on the south coast of England. Its roots can be traced back to 1858 when the Brighton School of Art was opened in the Royal Pavilion. It achieved university status in 1992.</p>
+				        <ul class="quicklinks">
+		                    <li><a href="https://www.brighton.ac.uk/index.aspx" target=”_blank”>Find us on the Web</a></li>
+		                    <li><a href="https://github.com/TheLawnMoer/thugslite" target=”_blank”>Project Github</a></li>
+		                </ul>
+				    </td>
+			    </tr>
+			</table>
+		</article>
+		
+<!-- Food Generator -->
+		<article>
+			<header class="post">
+			    <h1>What can I make with...</h1>
+			    <h3 id="generator">Got a few slices of leftover bread, an odd onion in your cupboard from the week before or maybe some milk in the fridge? Our recipe generator tool will help you with your ingredients to find the perfect recipe you can make, so none of your food goes to waste, with only 3 requriements needed to begin why dont you give it a try, its that easy.</h3>
+        <div class="profiling-container">
+            <h1>Recipe Generator</h1>
+            <div class="question question1">
+                <p>Please select main recipe</p>
+            <form action = "databaseSQLi.php" method="post" target="_blank" name="main" id="main">
+                    <input type="radio" name="qry" value="qry1" checked>Beef (0)<br>
+                    <input type="radio" name="qry" value="qry2" checked>Chicken (5)<br>
+                    <input type="radio" name="qry" value="qry3" checked>Duck (0)<br>
+                    <input type="radio" name="qry" value="qry4" checked>Lamb (0)<br>
+                    <input type="radio" name="qry" value="qry5" checked>Seafood (13)<br>
+                    <input type="radio" name="qry" value="qry6" checked>Turkey (0)<br>
+                    <input type="radio" name="qry" value="qry7" checked>Fish (13)<br>
+            </div>
+            <div class="question question2">
+                <p>Please select diet type</p>
+                <select name="diet" id="diet">
+                    <option value="high-protein">High Protein</option>
+                    <option value="low-fat">Low Fat</option>
+                    <option value="low-carb">Low Carb</option>
+                    <option value="high-fibre">High Fibre</option>
+                    <option value="balanced">Balanced</option>
+                </select>
+            </div>
+
+            <div class="question question3">
+                <p>Please select desired preference </p>
+                <select name="heath" id="health">
+                    <option value="alcohol-free">None</option>
+                    <option value="sugar-conscious">Sugar-Conscious</option>
+                    <option value="alcohol-free" selected>Alcohol-Free</option>
+                    <option value="peanut-free">Peanut-Free</option>
+                    <option value="tree-nut-free">Tree-Nut-Free</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+                
+            </div>
+            <div class="submit-button">
+                <button type="submit" name="submit" class="submit-button">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="display">
+        <div class="result-container" id="rc">
+            <ul class="ingredients">
+            </ul>
+        </div>
+    </div>
+			</header>
+		</article>
+    </main>
+<!--  Footer  -->
+    	<footer>
+    	    <div class="footermen">
+                <a href="index.html">Home</a>
+                <a href="healthyeating.html">Healthy Eating</a>
+                <a href="theteam.html">Meet our Team</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+            <br>
+	    	<small>&copy; 2021, University of Brighton, School of Computing, Engineering and Mathematics</small>
+    	</footer>
+    </div>
+
+	<script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("navButton").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            document.getElementById("navButton").style.display = "";
+        }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+        } 
+        else {
+            document.getElementById("nav").style.top = "-5em";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("rc");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+            x.style.display = "none";
+            }
+        }
+    </script>
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
